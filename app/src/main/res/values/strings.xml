@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PokeDemo</string>
+    <string name="refresh">Refresh</string>
+    <string name="unknown_pokemon">Missing Pokemon Sprite</string>
+    <string name="weight">Weight: %1$.2f Kg.</string>
+    <string name="height">Height: %1$.2f m.</string>
+</resources>
