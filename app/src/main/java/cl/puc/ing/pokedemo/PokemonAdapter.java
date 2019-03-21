@@ -1,8 +1,8 @@
 package cl.puc.ing.pokedemo;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -33,6 +33,7 @@ public class PokemonAdapter extends ArrayAdapter<Pokemon> {
         TextView pokemonNameImageView = view.findViewById(R.id.pokemon_name_text_view);
         Pokemon pokemon = getItem(position);
 
+        //noinspection ConstantConditions
         pokemonNameImageView.setText(pokemon.getName());
         Glide.with(getContext()).load(pokemon.getSprite().getFrontDefault()).into(pokemonSpriteImageView);
 

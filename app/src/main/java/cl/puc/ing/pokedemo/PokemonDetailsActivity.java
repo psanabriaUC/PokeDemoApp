@@ -2,7 +2,9 @@ package cl.puc.ing.pokedemo;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -39,7 +41,7 @@ public class PokemonDetailsActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onSaveInstanceState(Bundle outState) {
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
         outState.putSerializable(POKEMON_DATA, pokemon);
         super.onSaveInstanceState(outState);
     }
